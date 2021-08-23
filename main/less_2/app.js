@@ -40,7 +40,6 @@ app.post('/auth', (req, res) => {
 
   if (name === userName && password === userPassword) {
     res.redirect('/users');
-    res.render('users', { users });
   } else {
     res.render('putPassword');
   };
@@ -81,6 +80,10 @@ app.post('/check_user', (req, res) => {
   const userInfo = users.find(el => el.name === user);
 
   res.render('userInfo', { userInfo });
+});
+
+app.get('/users', (req, res) => {
+  res.render('users', { users });
 });
 
 app.get('*', (req, res) => {

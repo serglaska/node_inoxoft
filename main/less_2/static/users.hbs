@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <style>
+    .name {
+      color: blue;
+    }
+
+    .password {
+      color: purple;
+    }
+  </style>
+
+  {{#each users}}
+  <h4><span class='name'>Email: {{this.name}}</span></h4>
+  <h4><span class='password'>Password: {{this.password}}</span></h4>
+  <form method='post' action='check_user'>
+    <button value={{{this.name}}} type="submit" name="submit">
+      Show more info about user {{this.name}}
+    </button>
+  </form>
+  {{/each}}
+
+</body>
+
+</html>

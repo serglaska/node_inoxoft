@@ -2,9 +2,9 @@ const users = require('../dataBase/users');
 
 module.exports = {
   authControllers: (req, res) => {
-    const body = req.body;
+    const { body } = req.body;
     const { name, password } = body;
-    const user = users.find(userOne => name == userOne.name);
+    const user = users.find((userOne) => name === userOne.name);
 
     if (!user) {
       res.redirect('/registration');
@@ -19,6 +19,6 @@ module.exports = {
       res.redirect('/users');
     } else {
       res.render('putPassword');
-    };
+    }
   }
 };

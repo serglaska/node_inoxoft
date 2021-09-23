@@ -4,25 +4,31 @@
   "description": "Node course",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon less_8/app.js"
+    "start": "nodemon less_11/app.js"
   },
   "author": "sergey",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.7",
     "dotenv": "^10.0.0",
     "email-templates": "^8.0.8",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.3",
+    "express-rate-limit": "^5.3.0",
+    "helmet": "^4.6.0",
     "joi": "^17.4.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.1",
+    "node-cron": "^3.0.0",
     "node-fetch": "^2.6.1",
     "nodemailer": "^6.6.3",
     "pug": "^3.0.2"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
+    "morgan": "^1.10.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",

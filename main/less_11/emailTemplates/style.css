@@ -1,0 +1,17 @@
+.footer {
+    font-size: medium;
+    margin-top: 164px;
+    background-color: rgba(235, 231, 8, 0.51);
+}
+.header {
+    height: 30px;
+    color: red;
+    font-size: large;
+    text-align: center;
+    background-color: black;
+}
+.body {
+    margin-top: 50px;
+    font-size: medium;
+    height: max-content;
+}
